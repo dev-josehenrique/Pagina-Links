@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+
+
+
+body {
+    background-image: url('img/Wallpaper.gif');
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Para evitar repetição da imagem */
+    background-attachment: fixed; /* Para manter o fundo fixo enquanto a página rola */
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+   
+
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.degrade{
+    background: linear-gradient(to right, #8894e4, #92a1e1);
+}
+
+.degrade:hover {
+    background: linear-gradient(to left, white, rgb(0, 0, 255)); /* Degradê de branco a azul forte ao passar o mouse */
+  }
+
+/* ESTILO DO HEADER */
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img{
+    max-width: 150px;
+    border-radius: 50%;
+   
+  
+  box-shadow: 0 0 20px 10px rgba(59, 2, 244, 0.5);
+    
+}
+
+header h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    font-weight: bold;
+   
+}
+
+header h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fffefe;
+    font-weight: 300;   
+    font-weight: bold;
+
+    backdrop-filter: blur(70px); 
+    border-radius: 20px;
+   
+}
+
+
+/* ESTILO DOS BOTÕES */
+
+section.botoes-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+/* Estilos base */
+a.link-tema button {
+    width: 50%; /* 100% da largura do elemento pai */
+    padding: 15px 10%; /* 15px de padding superior e inferior, 10% de padding nas laterais */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+    margin-left: 130px;
+}
+
+/* Estilos para dispositivos menores (por exemplo, quando a largura da tela for menor que 768px) */
+@media (max-width: 768px) {
+    a.link-tema button {
+        font-size: 1em; /* Reduza o tamanho da fonte para dispositivos menores, se necessário */
+        padding: 10px 5%; /* Ajuste o padding para dispositivos menores, se necessário */
+        margin-left: 70px;
+    }
+}
+
+
+a.link i{
+    font-size: 1.5em;
+}
+
+a.link button:hover, footer a.btn-footer:hover{
+    transform: scale(1.05);
+}
+
+/* ESTILO DO FOOTER */
+
+footer{
+    text-align: center;
+    margin: 30px;
+}
+
+footer a.btn-footer{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 2 10px;
+    transition: .2s;
+}
+
+
+  
+
+
+
+
